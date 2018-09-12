@@ -1,0 +1,1 @@
+printf("Max number is %d", a);
