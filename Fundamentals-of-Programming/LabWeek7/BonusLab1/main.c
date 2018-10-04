@@ -3,15 +3,15 @@
 
 int main()
 {
-    int i, n, a[5];
-    //int i, n, a[4];
+    int i, n, temp, a[5], b[5];
     n = 5;
     for (i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
     }
-    for (i = n - 1; i >= 0; i--)
+    for (i = 0; i <= 4; i++)
     {
-        printf("%d ", a[i]);
+        b[i] = a[4 - i];
+        printf("%d ", b[i]);
     }
 }
