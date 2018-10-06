@@ -3,7 +3,7 @@
 
 int main()
 {
-    int i, n, temp, a[5], b[5];
+    int i, n, a[4], b[4];
     n = 5;
     for (i = 0; i < n; i++)
     {
