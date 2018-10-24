@@ -1,0 +1,1 @@
+arr[row][col] = rand() % 10;
