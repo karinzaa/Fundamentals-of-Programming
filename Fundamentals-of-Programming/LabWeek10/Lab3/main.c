@@ -9,7 +9,7 @@ int main()
     {
         srand(time(NULL));
         rand_number = 1 + rand() % 100;
-        for (gue = 7; gue > 0; gue--)
+        for (gue = 7; gue >= 0; gue--)
         {
             //printf("%d",rand_number);
             printf("\nEnter your guess: ");
@@ -25,6 +25,11 @@ int main()
             }
             else
                 printf("Wrong number :( Your guess was too low.\nYou have %d guesses left. Try again.\n", gue);
+            if(gue == 0)
+            {
+            printf("\nSorry you lose\n");
+            printf("The correct number is : %d",rand_number);
+            }    
         }
         return 0;
     }
